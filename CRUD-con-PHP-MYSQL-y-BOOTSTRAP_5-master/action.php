@@ -57,7 +57,7 @@ if (!((strpos($tipo_foto, "PNG") || strpos($tipo_foto, "jpg") && ($tamano_foto <
             '".$fechaRegistro."'
         )");
         $resulInsert = mysqli_query($con, $SqlInsertAlumno);
-        ///print_r( $SqlInsertAlumno);
+        //print_r( $SqlInsertAlumno);
 
     }
     closedir($miDir);

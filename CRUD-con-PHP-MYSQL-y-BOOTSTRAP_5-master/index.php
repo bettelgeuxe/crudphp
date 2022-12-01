@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD con PHP - MYSQL y BOOTSTRAP 5 :: WebDeveloper Urian Viera</title>
+    <title>CRUD con PHP - MYSQL Sistemas MF </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/home.css">
@@ -24,7 +24,7 @@
 
     <div class="col-md-4 mb-3">
       <h3 class="text-center">Datos del Alumno</h3>
-      <form method="POST" action="action.php" enctype="multipart/form-data">
+      <form method="POST" action="action.php" enctype="multipart/form-data"><!--enctype para poder enviar archivos como las fotos-->
         <input type="text" name="metodo" value="1" hidden>
       <div class="mb-3">
           <label class="form-label">Nombre y Apellido</label>
@@ -61,7 +61,7 @@
         </div>
         <div class="mb-3">
           <label for="formFile" class="form-label">Foto del Alumno</label>
-          <input class="form-control" type="file" name="foto" accept="image/png,image/jpeg" required>
+          <input class="form-control" type="file" name="foto" accept="image/png,image/jpeg">
         </div>
 
         <div class="d-grid gap-2 col-12 mx-auto">
