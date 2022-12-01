@@ -16,7 +16,7 @@
   <div class="row justify-content-md-center">
     <div class="col-md-12">
       <h1 class="text-center mt-3">CRUD con PHP - MYSQL y BOOTSTRAP 5 </h1>
-      <p class="text-center">DESDE CERO, <span> AQUÍ SI APRENDERAS ..!</span> </p>
+      
         <a href="./"><i class="bi bi-house"></i></a>
         <hr class="mb-3">
     </div>
