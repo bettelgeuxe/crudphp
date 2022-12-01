@@ -30,11 +30,11 @@
 		<!--Menú-->
 		
 		<ul>
-          <li><a href="index.html">Inicio</a></li>
-        <li><a class="active" href="#">Usuarios</a></li>
-        <li><a href="prestamos.html">Prestamos</a></li>
-		<li><a href="login.html">Salir</a></li>  
-      </ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a class="active" href="#">Usuarios</a></li>
+      <li><a href="prestamos.html">Prestamos</a></li>
+		  <li><a href="login.html">Salir</a></li>  
+    </ul>
 	</nav>
     
 </header>	
@@ -44,8 +44,16 @@
  <body class="login-img-body"> <!-- Imagen de fondo-->	
   <!-- Imagen de Formulario-->	
 	
-	<div class="container">
+	<div class="container formulario_1">
     <div id="header">
+    <ul class="nav1">
+				<li><a href="listado.php">Listado</a></li>
+				<li><a href="form_registro.html">Registrar</a></li>
+				<li><a class="active" href="form_consultar.html">Consultar</a></li>
+				<li><a href="form_modificar.html">Modificar</a></li>
+				<li><a href="form_eliminar.html">Eliminar</a></li>
+			</ul>
+      <!--
         <ul class="nav1">
           <li>
             <a href="detalles.php?id=<?php echo $dataAlumno['id']; ?>" class="btn btn-warning mb-2"   title="Ver datos del alumno <?php echo $dataAlumno['namefull']; ?>">
@@ -62,7 +70,7 @@
           <li><a href="form_modificar.html">Modificar</a></li>
           <li><a href="form_eliminar.html">Eliminar</a></li>
         </ul>
-    </div>
+    </div>-->
 		<!--
     <form class="formulario_1">
 			<p class="elementos_formulario">&nbsp;</p>
@@ -87,10 +95,12 @@
     $totalAlumnos = mysqli_num_rows($queryAlumnos);
     
  ?>
-	 
+      <p class="elementos_formulario">&nbsp;</p>
+		  <h3 class="elementos_formulario">Lista de usuarios</h3>
 	        <table>
             <thead>
                 <tr>
+                    <th>#</th>
                     <th>Nombres</th>
                     <th>Documento</th>
                     <th>Género</th>
