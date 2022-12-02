@@ -122,7 +122,9 @@
                     <td>
                       <a href="detalles.php?id=<?php echo $dataAlumno['id']; ?>" class="btn btn-warning mb-2"   title="Ver datos del alumno <?php echo $dataAlumno['namefull']; ?>">
                       <i class="bi bi-tv"></i> Ver</a>
-                      <a href="formEditar.php?id=<?php echo $dataAlumno['id']; ?>" class="btn btn-info mb-2"   title="Actualizar datos del alumno <?php echo $dataAlumno['namefull']; ?>">
+                      
+                      <a href="modificar.php?id=<?php echo $dataAlumno['id']; ?>" class="btn btn-info mb-2"   title="Actualizar datos del alumno <?php echo $dataAlumno['namefull']; ?>">
+
                       <i class="bi bi-arrow-clockwise"></i> Actualizar</a>
                       <a href="action.php?id=<?php echo $dataAlumno['id']; ?>&metodo=3&namePhoto=<?php echo $dataAlumno['foto']; ?>" class="btn btn-danger mb-2" title="Borrar el alumno <?php echo $dataAlumno['namefull']; ?>">
                       <i class="bi bi-trash"></i> Borrar</a>
