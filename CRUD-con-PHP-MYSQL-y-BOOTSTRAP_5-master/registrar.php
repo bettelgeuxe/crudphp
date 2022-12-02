@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Registrar</title>
     <link href="css/estilos.css" rel="stylesheet" type="text/css">
-
 </head>
 
 	<!-- Inicio del encabezado -->
@@ -43,17 +42,15 @@
  <body class="login-img-body"> <!-- Imagen de fondo-->	
 	 
 	 <!-- Imagen de Formulario-->	
-	<div class="container">
-		
+	<div class="container formulario_1">
 		<div id="header">
             <ul class="nav1">
                 <li><a href="listado.php">Listado</a></li>
-                <li><a class="active" href="form_registro.html">Registrar</a></li>
+                <li><a class="active" href="registrar.php">Registrar</a></li>
                 <li><a href="form_consultar.html">Consultar</a></li>
-                <li><a href="form_modificar.html">Modificar</a></li>
                 <li><a href="form_eliminar.html">Eliminar</a></li>
             </ul>
-		</div>
+		
 
         <form class="formulario_1" method="POST" action="action.php" enctype="multipart/form-data"><!--enctype para poder enviar archivos como las fotos-->    
             <input type="text" name="metodo" value="1" hidden>
@@ -91,7 +88,7 @@
                     </button>
 			    </p>
       </form>
-      
+        </div>
 	</div>
     <?php
     include('config.php');

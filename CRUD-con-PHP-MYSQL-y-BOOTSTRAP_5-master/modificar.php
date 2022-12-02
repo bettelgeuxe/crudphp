@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>Listado</title>
-  
   <link href="css/estilos.css" rel="stylesheet" type="text/css">
-  
+</head> 
 
-</head>  <header>
+<!-- Inicio del encabezado -->
+
+
+<header>
 	<nav>
 		
 		<!-- Encabezado para menú responsivo-->
@@ -35,14 +37,18 @@
     
 </header>	
 
+<!-- Inicio del cuerpo -->
+
 <body class="login-img-body">
+
+ <!-- Imagen de Formulario-->	
     <div class="container formulario_1">
         <div id="header">
             <ul class="nav1">
                 <li><a href="listado.php">Listado</a></li>
-                <li><a class="active" href="form_registro.html">Registrar</a></li>
+                <li><a href="form_registro.html">Registrar</a></li>
                 <li><a href="form_consultar.html">Consultar</a></li>
-                <li><a href="form_modificar.html">Modificar</a></li>
+                <li><a class="active" href="form_modificar.html">Modificar</a></li>
                 <li><a href="form_eliminar.html">Eliminar</a></li>
             </ul>
 		</div>
