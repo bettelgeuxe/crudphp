@@ -58,7 +58,14 @@
                 
 			          <label>Nº Documento</label>
 					      <input type="number" name="cedula" placeholder="Número de documento">
-			        </p>				
+                  <button type="submit" class="btn-register" value="Consultar" name="btn2">
+                    Buscar Usuario
+                  </button>
+			        </p>
+              
+              
+              
+              
               <?php 
     if(isset($_POST['btn2']))
     {
@@ -67,19 +74,32 @@
       $documento = $_POST['cedula'];
       
       $resultados = mysqli_query($con,"SELECT * FROM table_alumnos WHERE cedula = $documento");
-      while($consulta = mysqli_fetch_array($resultados))
-      {
-        echo $consulta['namefull'];
-        echo "<br>";
-      }
-    }
-
-      
+      while($consulta = mysqli_fetch_array($resultados)){
+        echo
+        "
+        <table>
+          <thead>
+            <tr>
+              <th>Nombres</th>
+              <th>Documento</th>
+              <th>Género</th>
+            </tr>
+                
+        
+        ";
     ?>
-    
-            <button type="submit" class="btn-register" value="Consultar" name="btn2">
-              Buscar Usuario
-            </button>
+    </thead>
+          <tbody>
+                <tr>
+                    <td><?php echo $consulta['namefull']; ?></td>
+                    <td><?php echo $consulta['cedula']; ?></td>
+                    <td><?php echo $consulta['sexo']==='M' ? 'Masculino' : 'Femenino' ?></td>
+                    
+                </tr>
+                <?php }}?>
+
+                </tbody>
+              </table>
 			    
       </form>
     </div>
