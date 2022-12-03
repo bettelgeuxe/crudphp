@@ -96,8 +96,8 @@
             </select>
             </p>
             <p class="elementos_formulario">
-                <label for="formFile">Foto del Alumno</label>
-                <input type="file" name="foto" accept="image/png,image/jpeg">
+                <!--<label for="formFile">Foto del Alumno</label>
+                <input type="file" name="foto" accept="image/png,image/jpeg">-->
             </p>
             <p class="elementos_formulario">
                 <button type="submit">
@@ -107,12 +107,12 @@
             </p>
         </form>
     
-
-    <div class="col-md-5 mb-3">
+                <!-- RECORDAR QUE EL COMENTARIO ES CON EL # PARA CODIGO PHP
+        <div class="col-md-5 mb-3">
         <label>Foto actual del alumno</label>
         <br>
-        <img src="fotosAlumnos/<?php echo $dataAlumno['foto']; ?>" alt="foto perfil" class="card-img-top fotoPerfil">
-    </div>
+        <img src="fotosAlumnos/<#?php echo $dataAlumno['foto']; ?>" alt="foto perfil" class="card-img-top fotoPerfil">
+        </div>-->
 
 
 

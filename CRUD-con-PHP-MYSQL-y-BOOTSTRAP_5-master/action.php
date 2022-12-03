@@ -61,10 +61,10 @@ if (!((strpos($tipo_foto, "PNG") || strpos($tipo_foto, "jpg") && ($tamano_foto <
 
     }
     closedir($miDir);
-    header("Location:index.php?a=1");
+    header("Location:listado.php?a=1");
 
   }else{
-    header("Location:index.php?errorimg=1");
+    header("Location:listado.php?errorimg=1");
   }
 }
 
@@ -113,11 +113,11 @@ if($metodoAction == 2){
             $resultFoto = mysqli_query($con, $updateFoto);
         }
     }else{
-        header("Location:index.php?errorimg=1");
+        header("Location:listado.php?errorimg=1");
     }
   }
 
-  header("Location:formEditar.php?update=1&id=$idAlumno");
+  header("Location:listado.php?update=1&id=$idAlumno");
  }
 
 
@@ -136,7 +136,7 @@ if($metodoAction == 3){
     }
     
     $msj ="Alumno Borrado correctamente.";
-    header("Location:index.php?deletAlumno=1&mensaje=".$msj);
+    header("Location:listado.php?deletAlumno=1&mensaje=".$msj);
  
 }
 
